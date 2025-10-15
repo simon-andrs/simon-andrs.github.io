@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Šimon Andrš</title>
+<meta name="description" content="Personal academic page of an undergraduate student at the Faculty of Mathematics and Physics, Charles University." />
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.4}
+html,body{height:100%;margin:0}
+.page{min-height:100%;display:flex;align-items:center;justify-content:center;padding:32px;background:#f7fafc;color:#0f172a}
+.card{max-width:720px;width:100%;background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.08);padding:28px}
+h1{margin:0 0 6px;font-size:1.6rem}
+p.lead{margin:0 0 18px;color:#374151}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+a.button{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;border:1px solid #e6eef6}
+a.primary{background:#0b61ff;color:#fff;border:none}
+.meta{margin-top:20px;color:#6b7280;font-size:0.9rem}
+footer{margin-top:26px;font-size:0.8rem;color:#94a3b8}
+@media (max-width:520px){.card{padding:20px}h1{font-size:1.3rem}}
+</style>
+</head>
+<body>
+<main class="page">
+<article class="card" role="main">
+<h1>Šimon Andrš</h1>
+<p class="lead">studying Mathematical Modelling at Faculty of Mathematics and Physics, Charles University</p>
+
+
+<div class="links" aria-label="important links">
+<!-- Replace "cv.pdf" with the path or URL to your PDF CV -->
+<a class="button primary" href="cv.pdf" target="_blank" rel="noopener noreferrer">View / Download CV (PDF)</a>
+
+
+<!-- Replace with your GitHub profile or other profile URLs -->
+<a class="button" href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+
+<!-- Example: ORCID, personal projects, portfolio, etc. -->
+<a class="button" href="#" onclick="event.preventDefault();alert('Replace this link with your project or ORCID URL.')">Other profile</a>
+</div>
+
+
+<div class="meta">
+<strong>Contact:</strong>
+<span> <a href="mailto:you@example.com">you@example.com</a> — preferred contact for academic inquiries</span>
+</div>
+
+
+<footer>
+<div>&copy; <span id="year"></span> Full Name — MFF, Charles University</div>
+</footer>
+</article>
+</main>
+<script>
+// set current year automatically
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
